@@ -78,8 +78,24 @@ const tasks1 = `
         "answer2": { "result": true, "value": "6.0" }
     },
     {
-        "question": "Высшая оценка в фигургом катании.",
-        "answer1": { "result": false, "value": "5+" },
-        "answer2": { "result": true, "value": "6.0" }
+        "question": "Тройной тулуп.",
+        "answer1": { "result": false, "value": "Костюм судьи в лыжных гонках" },
+        "answer2": { "result": true, "value": "Элемент в фигурном катании" }
     },
+    {
+        "question": "Оружие биатлониста.",
+        "answer1": { "result": false, "value": "Арбалет" },
+        "answer2": { "result": true, "value": "Ружьё" }
+    },
+    {
+        "question": "Олимпийский девиз: "Быстрее, выше, ...".",
+        "answer1": { "result": false, "value": "Круче" },
+        "answer2": { "result": true, "value": "Сильнее" }
+    },
+    {
+        "question": "Что просят лыжники?",
+        "answer1": { "result": false, "value": "Воды!" },
+        "answer2": { "result": true, "value": "Лыжню!" }
+    },
+    
 ]`
