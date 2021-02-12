@@ -97,5 +97,85 @@ const tasks1 = `
         "answer1": { "result": false, "value": "Воды!" },
         "answer2": { "result": true, "value": "Лыжню!" }
     },
+    {
+        "question": "Боксерская площадка.",
+        "answer1": { "result": true, "value": "Ринг" },
+        "answer2": { "result": false, "value": "Татами" }
+    },
+    {
+        "question": "Профессиональный стиль плавания.",
+        "answer1": { "result": false, "value": "Баттерфляй" },
+        "answer2": { "result": true, "value": "По-собачьи" }
+    },
+    {
+        "question": "Куда надо забросить мяч в баскетболе?.",
+        "answer1": { "result": false, "value": "Ведро" },
+        "answer2": { "result": true, "value": "Корзина" }
+    },
+    {
+        "question": "Русский бейсбол.",
+        "answer1": { "result": true, "value": "Лапта" },
+        "answer2": { "result": false, "value": "Городки" }
+    },
+    {
+        "question": "Крылатая фраза: "Главное не победа, а ...".",
+        "answer1": { "result": false, "value": "Присутствие" },
+        "answer2": { "result": true, "value": "Участие" }
+    },
+    {
+        "question": "На чем играют в кёрлинг?",
+        "answer1": { "result": true, "value": "Лёд" },
+        "answer2": { "result": false, "value": "Трава" }
+    },
+    {
+        "question": "Игровое время в хоккее.",
+        "answer1": { "result": false, "value": "Тайм" },
+        "answer2": { "result": true, "value": "Период" }
+    },
+    {
+        "question": "Что показывает футбольный судья, удаляемому с поля за нарушение игроку?",
+        "answer1": { "result": false, "value": "Чёрная метка" },
+        "answer2": { "result": true, "value": "Красная карточка" }
+    },
+    {
+        "question": "Закончи строчку из песни: "В хоккей играют ...".",
+        "answer1": { "result": true, "value": "Настоящие мужчины" },
+        "answer2": { "result": false, "value": "Реальные пацаны" }
+    },
+    {
+        "question": "Голеадор.",
+        "answer1": { "result": false, "value": "Хороший вратарь" },
+        "answer2": { "result": true, "value": "Хороший нападающий" }
+    },
+    {
+        "question": "Предмет мебели в хоккейном штрафном боксе.",
+        "answer1": { "result": true, "value": "Скамейка щтрафников" },
+        "answer2": { "result": false, "value": "Скамья подсудимых" }
+    },
+    {
+        "question": "Спортивный снаряд для метания.",
+        "answer1": { "result": false, "value": "Наковальня" },
+        "answer2": { "result": true, "value": "Молот" }
+    },
+    {
+        "question": "Одно из нарушений в баскетболе.",
+        "answer1": { "result": true, "value": "Пробежка" },
+        "answer2": { "result": false, "value": "Прогулка" }
+    },
+    {
+        "question": "Вид борьбы.",
+        "answer1": { "result": false, "value": "Афроамериканская" },
+        "answer2": { "result": true, "value": "Греко римская" }
+    },
+    {
+        "question": "Одежда каратиста.",
+        "answer1": { "result": true, "value": "Кимоно" },
+        "answer2": { "result": false, "value": "Трико" }
+    },
+    {
+        "question": "Какого спортивного снаряда не существует.",
+        "answer1": { "result": true, "value": "Баран" },
+        "answer2": { "result": false, "value": "Козел" }
+    },
     
 ]`
