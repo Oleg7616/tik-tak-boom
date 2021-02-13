@@ -5,22 +5,57 @@ tikTakBoom = {
         gameStatusField,
         textFieldQuestion,
         textFieldAnswer1,
-        textFieldAnswer2
+        textFieldAnswer2,
+        inputTime, //ввеенное пользователем значение времени
+        inputCountOfPlayers,//количество игроков
     ) {
         this.boomTimer = 30;
+        this.inputTime=inputTime;
         this.countOfPlayers = 2;
+        this.inputCountOfPlayers=inputCountOfPlayers;
         this.tasks = JSON.parse(tasks);
-
         this.timerField = timerField;
         this.gameStatusField = gameStatusField;
         this.textFieldQuestion = textFieldQuestion;
         this.textFieldAnswer1 = textFieldAnswer1;
         this.textFieldAnswer2 = textFieldAnswer2;
-
         this.needRightAnswers = 3;
+        this.timeToPlay=3;//переменная для отсчета начала игры
+
+    },
+
+    
+    startTimer() {
+        //скрываем ненужные поля
+        startBlock.style.display='none';
+
+        this.gameStatusField.innerText='Обратный отсчет!';
+
+        this.timerField.innerText=`00:0${this.timeToPlay}`;
+        if (this.timeToPlay-- > 0) {
+            setTimeout(
+                () => {
+                    this.startTimer()
+                },
+                1000,
+            )
+        } else {
+            this.timeToPlay=3;
+            this.run();
+        }     
     },
 
     run() {
+        this.gameStatusField.innerText='Игра идет';
+
+        // присваиваем значение введенное пользователем к таймеру и количеству игроков
+        this.boomTimer=parseInt(inputTime.value) || 30;
+        this.countOfPlayers=parseInt(inputCountOfPlayers.value) || 2;
+
+        //обнуляем поля ввода
+        inputTime.value='';
+        inputCountOfPlayers.value='';
+
         this.state = 1;
 
         this.rightAnswers = 0;
@@ -28,6 +63,11 @@ tikTakBoom = {
         this.turnOn();
 
         this.timer();
+            
+        //выводим нужные поля
+        inGameBlock.style.display='inline';
+
+        this.gameStatusField.style.display='inline';
     },
 
     turnOn() {
@@ -45,8 +85,10 @@ tikTakBoom = {
         if (this.currentTask[value].result) {
             this.gameStatusField.innerText = 'Верно!';
             this.rightAnswers += 1;
+            this.boomTimer+=5;
         } else {
             this.gameStatusField.innerText = 'Неверно!';
+            this.boomTimer-=5;
         }
         if (this.rightAnswers < this.needRightAnswers) {
             if (this.tasks.length === 0) {
@@ -74,6 +116,13 @@ tikTakBoom = {
     },
 
     finish(result = 'lose') {
+        //выводим нужные поля
+        startBlock.style.display='inline';
+
+
+        //скрываем ненужные поля
+        inGameBlock.style.display='none';
+        
         this.state = 0;
         if (result === 'lose') {
             this.gameStatusField.innerText = `Вы проиграли!`;

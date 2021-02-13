@@ -1,30 +1,4 @@
 const tasks = `
-    [
-        {
-            "question": "2 * 2 = ",
-            "answer1": { "result": true, "value": "4" },
-            "answer2": { "result": false, "value": "3" }
-        },
-        {
-            "question": "Как зовут крокодила, лучшего друга Чебурашки?",
-            "answer1": { "result": false, "value": "Данди" },
-            "answer2": { "result": true, "value": "Гена" }
-        },
-        {
-            "question": "5 + 5",
-            "answer1": { "result": false, "value": "1" },
-            "answer2": { "result": true, "value": "10" }
-        },
-        {
-            "question": "Столица Италии?",
-            "answer1": { "result": false, "value": "Ватикан" },
-            "answer2": { "result": true, "value": "Рим" }
-        }
-    ]
-`;
-
-const tasks1 = `
-
 [
     {
         "question": "Шахматы - вид спорта?",
@@ -88,7 +62,7 @@ const tasks1 = `
         "answer2": { "result": true, "value": "Ружьё" }
     },
     {
-        "question": "Олимпийский девиз: "Быстрее, выше, ...".",
+        "question": "Олимпийский девиз: \\"Быстрее, выше, ...\\".",
         "answer1": { "result": false, "value": "Круче" },
         "answer2": { "result": true, "value": "Сильнее" }
     },
@@ -118,7 +92,7 @@ const tasks1 = `
         "answer2": { "result": false, "value": "Городки" }
     },
     {
-        "question": "Крылатая фраза: "Главное не победа, а ...".",
+        "question": "Крылатая фраза: \\"Главное не победа, а ...\\".",
         "answer1": { "result": false, "value": "Присутствие" },
         "answer2": { "result": true, "value": "Участие" }
     },
@@ -138,7 +112,7 @@ const tasks1 = `
         "answer2": { "result": true, "value": "Красная карточка" }
     },
     {
-        "question": "Закончи строчку из песни: "В хоккей играют ...".",
+        "question": "Закончи строчку из песни: \\"В хоккей играют ...\\".",
         "answer1": { "result": true, "value": "Настоящие мужчины" },
         "answer2": { "result": false, "value": "Реальные пацаны" }
     },
@@ -176,6 +150,7 @@ const tasks1 = `
         "question": "Какого спортивного снаряда не существует.",
         "answer1": { "result": true, "value": "Баран" },
         "answer2": { "result": false, "value": "Козел" }
-    },
+    }
     
-]`
+]
+`;

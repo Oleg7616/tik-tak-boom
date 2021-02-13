@@ -4,13 +4,14 @@ body {
 
 .timer-output{
     width: 200px;
-    background: #222;
-    color: darkred;
+    background:rgb(53, 48, 112);
+    color: rgb(233, 77, 16);
     padding: 16px 8px;
     font-size: 64px;
     text-align: center;
     line-height: 1;
     user-select: none;
+    border-radius: 10px;
 }
 
 .timer-output-wrapper{
@@ -21,3 +22,22 @@ body {
     justify-content: center;
     margin: 12px;
 }
+
+.container{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: rgb(122, 243, 106);
+    border-radius: 10px;
+    }
+
+.input-group-btn{
+    padding: 0px 5px;
+}
+
+#inGameBlock{
+    padding-top: 5px;
+}
+
+    
