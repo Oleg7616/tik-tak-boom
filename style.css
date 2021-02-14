@@ -26,12 +26,17 @@ body {
 
 .container{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     padding-right: 50px;
     padding-left: 50px;
     background-color: rgb(122, 243, 106);
     border: 5px solid brown;
     border-radius: 10px;
+    }
+
+    .imgBomb{
+        padding-left: 120px;
+        padding-top: 20px;
     }
 
     #gameRun{
@@ -53,13 +58,10 @@ body {
  }  
 
  #gameStatusField{
-     border: 1px solid black
- }
-
- #inputCountOfPlayers{
      border: 1px solid black;
+     height: 50px;
  }
 
- #inputTime{
+ #inputCountOfPlayers, #inputTime{
      border: 1px solid black;
  }
