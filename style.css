@@ -34,6 +34,10 @@ body {
     border-radius: 10px;
     }
 
+    .Head{
+        color: rgb(6, 6, 153);
+    }
+
     .imgBomb{
         padding-left: 120px;
         padding-top: 20px;
@@ -60,6 +64,7 @@ body {
  #gameStatusField{
      border: 1px solid black;
      height: 50px;
+     color: rgb(7, 7, 148);
  }
 
  #inputCountOfPlayers, #inputTime{
